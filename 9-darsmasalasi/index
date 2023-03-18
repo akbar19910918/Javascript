@@ -1,0 +1,92 @@
+//                   Homework
+//                               1-masala
+// 1. check(str1,str2)-function yozilsin.berilgan parametrlar bir biriga mos yoki umuman to'g'ri kelmasligi va
+// va qisman to'g'ri ekanligini ifodalovchi natija qaytarsin.
+// Ex:str1="webbrain academy",str2-'acsa'
+
+// function getdata(str){
+//     let res={};
+//     for(i of str){
+//         if(i in res){
+//             res[i]++;
+//         }else res[i]=1;
+     
+//     }
+//     console.log(str,res);
+// }
+// getdata("webbrain")
+
+//                                2-masala
+// 2. getCosunt(str)-function yozilsin.function str dagi xarflar sanog'ini chiqarb bersin.
+// ex:str="webbrain"{w:1,e:1,b:2,r:1,a:1, i:1,n:1}
+
+// function getData(str){
+//     let res={};
+//     for(i of str ){
+//     if(i in res){
+//         res[i]++;
+//     }else res[i]=1;
+//     }
+//     console.log(str, res);
+// }
+// getData("webbrain");
+
+//                                3-masala
+// 3. truncate(str,n) - function yozilsin.berilgan stringdan n ta xarf ajratb chiqarb bersin
+// ex:str='webbrain academy',n=5
+// res:'webbr'
+
+// let str="webbrain academy"
+// function getData(str){
+    
+//     if (str.length>0) {
+//        console.log(str.slice(2,10)); 
+//     }
+// }
+//   getData("webbrain academy")
+
+
+//                                4-masala
+// 4. getCurrency(str) - berilgan pul birligini faqat raqamlarini ajratb chiqaring.
+// ex:str='$1200'-1200
+
+
+
+
+
+//                                5-masal
+// 5. berilgan string ichidan raqam,string vacharacterlarni aloxida sanogi bn chiqaring
+// ex:'webbr@<>!n_2022'
+// res:{latter:6,char3,numbers:4}
+
+// function getdata(str){
+//     let res={num:0,str:0, char:0,}
+//     for (i of str){
+//         if(isFinite(i)){
+//             res.num++;
+//         }else if (i.toLowerCase() !==i.toUpperCase()){
+//           res.str++;
+//         }else res.char++;
+//     }
+//     console.log(res);
+// }
+// getdata('webbr@<>!n_2022')
+
+
+
+
+//                                6-masala
+//  6.capitilize(str)-berilgan stringdagi barcha sozlarni faqatbosh xarfini katta xarfga o'zgartiring
+// ex:webbrain academy,
+// res:Webbrain Academy
+
+// function getData(str){
+//   let res=""; 
+//   for(i in str){
+//     res += str[i-1] ===" "|| str[i-1] === undefined 
+//     ? str[i].toUpperCase() : str[i];
+//   }
+//   console.log(res);
+// }
+// getData("webbrain academy")
+
