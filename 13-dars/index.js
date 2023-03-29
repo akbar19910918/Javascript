@@ -43,8 +43,8 @@
 // sababi orta arfimetigi 3ga teng boladigon qiymat array ichida yoq
 
 // 📌 #3
-// A= 0,4,3,-1
-// S = 2
+ A= 0,4,3,-1;
+ S = 2;
 // result 2
 // 0,4/2 = S
 // 4,3,-1/2 = S
@@ -53,6 +53,21 @@
 // function Test(A, S){
 // .... code ni shu yerga yozing
 // }
+// function test(A, S) {
+//    let count = 0;
+//    let n = 0;
+//    while (n < A.length) {
+//      for(let i=n;i<=A.length;i++){
+//          let fragment=A.slice(n,i)
+//          if(fragment.length){
+//              eval((${fragment.join("+")})/${fragment.length})===S?count++:null;
+//          }
+//      }
+//      n++;
+//    }
+//    return count;
+//  }
+//  console.log(test([0, 4, 3, -1], 2));
 //------------------------------------------------------------
 //                      1-masala
 // berilgan stringda nechta katta va nechta kichik xarf mavjud.
@@ -103,20 +118,26 @@
    //      function removeDuplicates(str){
    //       let res="";
       
-   //      for( i=0;i<str.length;i++){
-   //           for( j=1;j<i;j++){
-   //              if(){
-                  
-   //              } 
-                
-   //          }  
-         
-   //      } 
-   //      console.log(res,);
-   //     }
-   //      removeDuplicates(text);
+   
 
-//      ?????????????????????????????????????????????
+//    let str = "weeebbbbbbbrrrrraaaiiiiinn";
+
+//    const getDoubleCate = (str) => {
+//    let res = "";
+
+//    for (let i = 0; i < str.length; i++) {
+//     if (str[i + 1] === str[i]);
+//     else res += str[i];
+//    }
+
+//    return res;
+//   };
+//  console.log(getDoubleCate(str));
+
+// 
+
+
+//      
 //     -----------------------------------------------------------------
 //                4-masala
 //   String ichidagi raqamlarni toping.
@@ -125,19 +146,19 @@
 //   let text="we66ra1n acad4my"
 //       function Count(str) {       
 //                   let num = ""
-//                   let soni=0;
+//                   let raqamlar_soni=0;
 //                   for (var i = 0; i < str.length; i++) 
 //         { 
 //           if (str[i] >= "0" && str[i] <= "9"){
 //            num=num+str[i]; 
-//            soni++;
+//            raqamlar_soni++;
 //           }
         
 //         } 
 //         console.log(num); 
-//         console.log("raqamlar soni "+soni);
+//         console.log("raqamlar soni "+raqamlar_soni);
 //       }
-//       Count(text);
+//     Count(text);
 //---------------------------------------------------------------
 
 //              5-masala
@@ -161,17 +182,14 @@
 //           6-masala
 // berilgan so'zlar palindrom yoki palindrom emasligini tekshiring
 // non,kiyik,kichik,ko'k,ikki
+   
+// let str6 = "kiyik";
 
-// function palindrome(str){
-//    for(var i=0;i<str.length/2;i++){
-//       if(str[i]!==str[str.length-1-i]){
-//          return "palimdrom emas";
-//       }
-//    }
-//    return "palindrom";
-// }
-// let text="ikki";
-// console.log(palindrome(text));
+// const getPolendrom = (str) => {
+//   let polindrom = str.split("").reverse().join("");
+//   return polindrom === str;
+// };
+//  console.log(getPolendrom(str6))
 
 
 
@@ -206,29 +224,29 @@
 // let str= "webbraaiiin"
 // string ziplash
 // res=web2ra2i3n
-// let abc="webbraaiiin"
 
-// function ziplash(str){
-//    res="";
   
-//    for(var i=0;i<str.length;i++){
-      
-//       for(var j=1;j<str.length;j++){
-//          var count=1;
-//          if(str[i]==str[j]){
-//             count++;
-//             res=res+str[i]+count;
-//          }
-//          else{
-//             res=res+str[i];
-//            break;
-//          }
-//          break;
-//    }
-   
-//    }console.log(res);
-// }
-// ziplash(abc);
+ 
+// let str9 = "webbraaain Accaaademyyyy";
+
+// const strZipper = (str) => {
+//   let res = "";
+//   let count = 1;
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === str[i + 1]) count++;
+//     else {
+//       res += str[i];
+//       if (count > 1) {
+//         res += count;
+//         count = 1;
+//       }
+//     }
+//   }
+
+//   return res;
+// };
+//  console.log(strZipper(str9));
 
 
 
@@ -267,40 +285,47 @@
 //   individual:false,
 // };
 //       function boolen(){
-//          for(var i in obj)
+//          for(i in obj)
 //       if(obj[i]==true || obj[i]==false){
 //          console.log(i+" "+obj[i]);
 //       }
 //       }
-//       boolen();
+ //     boolen();
 
 //------------------------------------------------------
 
 //             11-masala
-let num=[2,3,5,3,2,3,6,8,7,6];
+// let num=[2,3,5,3,2,3,6,8,7,6];
 // remore dublicates
 // new Set dan foydalanmang
 
-function removeDuplicates(array){
-  var res="";
-   for (let i = 0; i < array.length; i++) {
-      for (let j = 1; j < array.length; j++) {
-         if(array[i]!==array[j]){
-           res=res+array[j]+","
-         }
-      }
-      
-   }
-   console.log(array);
-}
-removeDuplicates(num);
+// let arr1 = [2, 2, 2, 2, 4, 4, 4, 5, 6, 7];
+
+// const getDoublicateArr = (arr) => {
+//   let res = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== arr[i + 1]) res.push(arr[i]);
+//   }
+//   return res;
+// };
+// console.log(getDoublicateArr(arr1));;
 
 //-----------------------------------------------------------
 
 //           12-masala
-// arraylerni bir biriga taqqoslang
-// let num1 =[1,2,3];
-// let num2 =[1,2,3];
+//arraylerni bir biriga taqqoslang
+ 
+
+//  let arr2 = [1, 2, 3];
+//  let arr3 = [1, 2, 3];
+ 
+//  const getComporasionArr = (arr1, arr2) => {
+//    let oneArr = arr1.join("");
+//    let twoArr = arr2.join("");
+ 
+//    return oneArr === twoArr;
+//  };
+//   console.log(getComporasionArr(arr2, arr3));
 //-----------------------------------------------------
 
 //              13-masala
@@ -316,3 +341,28 @@ removeDuplicates(num);
 // sonlar(arr);
 
 
+//-------------------------------------------------------
+
+//              14-masala
+
+ // [2,3,2,4,5,2,3]
+// [2,3,2,1,2,3]
+// [2,2,1,2]
+// [1,2]
+// [1]
+// Berilgan Array shu korinishda chiqishi kerak ?
+
+// let arr5 = [2, 3, 2, 4, 5, 2, 3];
+
+// const arrTwoMax = (arr) => {
+//   for (value of arr) {
+//     let sortArr = arr.sort((a, b) => a - b);
+//     let max = sortArr.pop() - sortArr.pop();
+
+//     sortArr.push(max);
+
+//     let total = sortArr.filter((value) => value);
+//     console.log(total);
+//   }
+// };
+//  arrTwoMax(arr5);
